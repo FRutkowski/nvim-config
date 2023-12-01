@@ -1,6 +1,6 @@
 require('mason').setup()
 require('mason-lspconfig').setup({
-  ensure_installed = { 'lua_ls', 'volar', 'tailwindcss' }
+  ensure_installed = { 'lua_ls', 'volar', 'tailwindcss', 'eslint' }
 })
 
 local on_attach = function(_, _)
@@ -30,3 +30,15 @@ require('lspconfig').tailwindcss.setup {
   on_attach = on_attach,
   capabilities = capabilities,
 }
+
+require('lspconfig').eslint.setup {
+  on_attach = function(client, bufnr)
+    vim.api.nvim_create_autocmd("BufWritePre", {
+      buffer = bufnr,
+      command = "EslintFixAll",
+    })
+  end,
+ capabilities = capabilities
+
+ }
+

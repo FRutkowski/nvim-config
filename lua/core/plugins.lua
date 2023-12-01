@@ -27,6 +27,8 @@ return require('packer').startup(function(use)
     'williamboman/mason.nvim',
     'williamboman/mason-lspconfig.nvim',
     'neovim/nvim-lspconfig',
+    'jose-elias-alvarez/null-ls.nvim',
+    'MunifTanjim/eslint.nvim',
   }
   use {
     'nvim-telescope/telescope.nvim',
