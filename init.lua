@@ -2,5 +2,9 @@ require('core.keymaps')
 require('core.plugins')
 require('core.plugin_config')
 
-vim.wo.relativenumber = true
+if vim.g.neovide then
+    -- Put anything you want to happen only in Neovide here
+    vim.o.guifont = "Source Code Pro:h10"
+end
 
+vim.wo.relativenumber = true
