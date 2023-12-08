@@ -5,4 +5,5 @@ that provides features like treesitter, formatter, autopairs, linter or lsp. I h
 
 # Installation
 
+## Linux
 Just copy repository content to ```~/.config/nvim```. Make sure you have ```neovim``` package installed.
