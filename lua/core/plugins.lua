@@ -31,7 +31,6 @@ return require('packer').startup(function(use)
     'jose-elias-alvarez/null-ls.nvim',
     'MunifTanjim/eslint.nvim',
   }
-  use "terrortylor/nvim-comment"
   use {
     'nvim-telescope/telescope.nvim',
     tag = '0.1.4',
@@ -42,11 +41,8 @@ return require('packer').startup(function(use)
     "cseickel/diagnostic-window.nvim",
     requires = { "MunifTanjim/nui.nvim" }
   }
-  --
-    -- My plugins here
-  -- use 'foo1/bar1.nvim'
-  -- use 'foo2/bar2.nvim'
-
+  use 'numToStr/Comment.nvim'
+  use "lukas-reineke/indent-blankline.nvim"
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then
