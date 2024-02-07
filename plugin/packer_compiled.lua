@@ -193,6 +193,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/filip/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
     url = "https://github.com/folke/tokyonight.nvim"
+  },
+  ["vgit.nvim"] = {
+    loaded = true,
+    path = "/home/filip/.local/share/nvim/site/pack/packer/start/vgit.nvim",
+    url = "https://github.com/tanvirtin/vgit.nvim"
   }
 }
 

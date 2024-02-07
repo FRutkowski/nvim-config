@@ -90,3 +90,4 @@ vim.api.nvim_create_autocmd({ "CursorHold" }, {
 })
 
 vim.api.nvim_set_keymap('n', 'K', ':DiagWindowShow', { noremap = true, silent = true })
+
