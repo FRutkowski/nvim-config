@@ -1,4 +1,4 @@
-vim.g.mapleader = ' '
+vim.g.mapleader = '<Space>'
 vim.g.maplocalleader = ' '
 
 vim.opt.backspace = '2'

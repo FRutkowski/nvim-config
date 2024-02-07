@@ -31,12 +31,19 @@ return require('packer').startup(function(use)
     'jose-elias-alvarez/null-ls.nvim',
     'MunifTanjim/eslint.nvim',
   }
+  use "terrortylor/nvim-comment"
   use {
     'nvim-telescope/telescope.nvim',
     tag = '0.1.4',
     requires = {{ 'nvim-lua/plenary.nvim' }}
   }
-  -- My plugins here
+  use 'lewis6991/hover.nvim'
+  use {
+    "cseickel/diagnostic-window.nvim",
+    requires = { "MunifTanjim/nui.nvim" }
+  }
+  --
+    -- My plugins here
   -- use 'foo1/bar1.nvim'
   -- use 'foo2/bar2.nvim'
 
